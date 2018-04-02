@@ -15,12 +15,15 @@ function yearOfBirth(age){
 }
 
 function whoAmI(name,age){
-  if (typeof name !== 'string' || isNaN(age)){
-    console.log('Arguments not valid');
+  if (typeof name !== 'string'){
+      throw new Error("Name is not string");
+  } 
+  if(isNaN(age)){
+    throw new Error("age is not number");
   }
   console.log(`My name is ${name} and I'm ${age} years old`);
   let yob = yearOfBirth(age);
   console.log('I was born in ' + yob);
 }
 
-whoAmI(5,5);
+whoAmI('suman',29);
