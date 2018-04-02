@@ -89,9 +89,10 @@
 
 
 
-const randomNo = Math.floor(Math.random() * 3) + 1;
+let randomNo = Math.floor(Math.random() * 3) + 1;
 let random = Math.floor(Math.random() * 3) + 1;
 function game(randomNo,random){
+    console.log(randomNo,random);
   if (random===1&&randomNo===2){
     console.log('lose');
   } else if(random===1&&randomNo===3){
@@ -108,7 +109,7 @@ function game(randomNo,random){
     console.log('tie');
   }
 }
-game();
+game(randomNo,random);
 
 
 

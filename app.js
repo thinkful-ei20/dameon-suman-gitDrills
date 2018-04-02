@@ -16,10 +16,10 @@ function yearOfBirth(age){
 
 function whoAmI(name,age){
   if (typeof name !== 'string'){
-      throw new Error("Name is not string");
+    throw new Error('Name is not string');
   } 
   if(isNaN(age)){
-    throw new Error("age is not number");
+    throw new Error('age is not number');
   }
   console.log(`My name is ${name} and I'm ${age} years old`);
   let yob = yearOfBirth(age);
