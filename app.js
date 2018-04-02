@@ -7,5 +7,7 @@ console.log('We did it.');
 
 
 
-
-console.log('My name is Dameon and I'm 29 years old');
+function whoAmI(){
+    console.log('My name is Dameon and I'm 29 years old');
+}
+whoAmI();
