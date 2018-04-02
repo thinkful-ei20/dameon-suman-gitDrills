@@ -5,3 +5,25 @@ function jediName(firstName,lastName){
 }
 
 jediName('suman','bandita');
+
+function beyond(num){
+    if(isFinite(num)){
+        if(num === 0){
+            console.log("Staying Home");
+        }
+        if(num > 0){
+            console.log("To infinity");
+        }
+        if(num < 0){
+            console.log("To negative infinity");
+        }            
+    }
+    else{
+        console.log("And beyond");
+    }
+}
+
+beyond(32);
+beyond(-32);
+beyond(0);
+beyond(32/0);
