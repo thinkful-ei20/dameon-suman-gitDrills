@@ -4,8 +4,13 @@ console.log('Hello World');
 console.log('We did it.');
 
 function yearOfBirth(age){
-    let yearOfBirth = 2018 - age;
-    return yearOfBirth;
+    if(age < 0 ){
+        throw new Error("Age cannot be negative");
+    }
+    else{
+        let yearOfBirth = 2018 - age;
+        return yearOfBirth;
+    }    
 }
 
 function whoAmI(name,age){
@@ -14,4 +19,4 @@ function whoAmI(name,age){
     console.log("I was born in " + yob);
 }
 
-whoAmI('suman',29);
+whoAmI('suman',-5);
