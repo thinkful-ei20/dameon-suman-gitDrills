@@ -3,7 +3,6 @@
 //   let str = lastName.substring(0,3);
 //   let str1 =firstName.substring(0,2);
 //   console.log(str+str1);
-
 // }
 // jediName('Mendoza','Dameon');
 
@@ -22,18 +21,13 @@
 //     console.log('Staying Home');
 //   }
 // }
-
-
-
 // beyond(0);
-// let string =  'craft block argon meter bells brown croon droop';
 
+// let string =  'craft block argon meter bells brown croon droop';
 // let arr = string.split(' ');
 // let newArr = [];
 
-
 // function decode(word){
-      
 //   if (word.charAt(0)==='a'){
 //     return word.charAt(1);
 //   }
