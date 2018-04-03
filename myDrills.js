@@ -92,21 +92,14 @@
 let randomNo = Math.floor(Math.random() * 3) + 1;
 let random = Math.floor(Math.random() * 3) + 1;
 function game(randomNo,random){
-    console.log(randomNo,random);
-  if (random===1&&randomNo===2){
-    console.log('lose');
-  } else if(random===1&&randomNo===3){
-    console.log('win');
-  } else if(random ===2&&randomNo===3){
-    console.log('lose');
-  } else if (random ===2 && randomNo===1){
-    console.log('win');
-  } else if (random === 3 && randomNo ===1){
-    console.log('lose');
-  } else if (random ===3 && randomNo === 2){
-    console.log('win');
+  let results = `ComputerGuess: ${randomNo}, You're guess: ${random}`;
+  if (randomNo === random){
+    console.log(results,'tie');
+  } else if ( random === 1 && randomNo === 3 || random === 2 && randomNo === 1
+      || random === 3 && randomNo === 2) {
+    console.log(results,'win');
   } else {
-    console.log('tie');
+    console.log(results,'lose');
   }
 }
 game(randomNo,random);
